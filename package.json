@@ -1,0 +1,34 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "gets current weather details per location",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefedeltejas/weather-app.git"
+  },
+  "keywords": [
+    "current+weather",
+    "storm",
+    "tornado",
+    "lightning",
+    "rain",
+    "snow",
+    "hot"
+  ],
+  "author": "Jackalope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefedeltejas/weather-app/issues"
+  },
+  "homepage": "https://github.com/jefedeltejas/weather-app#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
