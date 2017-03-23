@@ -1,4 +1,16 @@
-const request = require('request');
+const request = require('request'),
+      yargs = require('yargs'),
+      argv = yargs.options({
+        a: {
+          demand: true,
+          alias: 'address',
+          describe: 'Address to fetch weather for',
+          string: true
+        }
+      })
+      .help()
+      .alias('help', 'h')
+      .argv;
 
 request({
   url: 'https://maps.googleapis.com/maps/api/geocode/json?address=12301%20kurland%20drive%20houston',
