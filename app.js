@@ -34,11 +34,9 @@ request({
   url: `https://api.darksky.net/forecast/${key}/${lat},${lng}`,
   json: true
 }, (error, response, body) => {
-  if (error) {
-    console.log('Unable to connect to weather data source.');
-  } else if (response.statusCode === 400) {
-    console.log('Unable to get your forecast. Try again later.');
-  } else if (response.statusCode === 200) {
+  if (!error && response.statusCode === 200) {
     console.log(body.currently.temperature);
+  } else {
+    console.log('Unable to get your forecast. Try again later.');
   }
 });
